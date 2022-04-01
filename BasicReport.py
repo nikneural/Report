@@ -11,6 +11,8 @@ from docx.shared import Inches, Pt
 from docx.table import _Cell
 from docx2pdf import convert
 
+
+# My second comment
 # add comment
 
 class BasicReport:
@@ -34,7 +36,7 @@ class BasicReport:
                          bold: bool = False):
         for i in range(data.shape[0]):
             for j in range(data.shape[1]):
-                run = table.cell(i+1, j).paragraphs[0].runs[0]
+                run = table.cell(i + 1, j).paragraphs[0].runs[0]
                 run.font.size = Pt(size)
                 run.font.bold = bold
 
